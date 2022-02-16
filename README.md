@@ -39,3 +39,6 @@ Here are some examples of how the bot looks when it works:
 
  - https://www.youtube.com/watch?v=ntEcIB6yJnU
  - https://imgur.com/a/e956cAR
+
+ You can experience the bot for yourself at: https://discord.gg/S9p47uR9qA
+ (may become unavailable depending on how long I can keep it running for)
