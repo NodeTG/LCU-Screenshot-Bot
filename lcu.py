@@ -106,8 +106,8 @@ async def screenshot(
         filename = sct.shot(mon=mon, output=f"screenshots\\{x}_{y}_{z}_{rot}_{random.randint(0,999999)}.png")
         logging.info(f"{ctx.author.name} ({ctx.author.id}) has taken a screenshot ({filename})")
 
-    if not "LEGOLCUR_DX11.exe" in (i.name() for i in psutil.process_iter()):
-        await ctx.respond("Game has crashed! Terminating bot...\nRemind Node to implement a fix for this!")
+    if not ("LEGOLCUR_DX11.exe" in (i.name() for i in psutil.process_iter())):
+        await ctx.respond("Game has crashed! Terminating bot...\nRemind Node to implement a fix for this!") # apprently this doesn't work - TODO: fix it
         await bot.close()
 
     with open(filename, "rb") as f:
