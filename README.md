@@ -33,7 +33,6 @@ X and Z are capped at +/- 1000 units, and Y has a minimum of 0.25 to prevent peo
 ## Notes
 
  - This bot does not provide a way to hide the HUD. This can be achieved via custom scripts, and I will likely release one that can be used for this purpose.
- - This bot does not (currently) have a way of patching out gravity on its own (this is high on my todo list though).
 
 ## Examples
 Here are some examples of how the bot looks when it works:

@@ -27,6 +27,9 @@ def reload_addrs():
     pos_base_addr = proc["modules"]["LEGOLCUR_DX11.exe"]["baseaddr"] + 0x01C77C78
     rot_base_addr = proc["modules"]["LEGOLCUR_DX11.exe"]["baseaddr"] + 0x01C74920
 
+    gravity_address = proc["modules"]["LEGOLCUR_DX11.exe"]["baseaddr"] + 0xAB8B3D
+    pymeow.nop_code(proc, gravity_address, 8)
+
     x_addr = read_offsets(proc, pos_base_addr, [0x90])
     y_addr = read_offsets(proc, pos_base_addr, [0x94])
     z_addr = read_offsets(proc, pos_base_addr, [0x98])
